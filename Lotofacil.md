@@ -13,7 +13,7 @@ The script must accept two positional arguments:
 A valid ticket MUST meet all the following criteria:
 * **Uniqueness:** No ticket can be identical to another ticket.
 * **Odd Numbers:** The ticket must contain between 5 and 10 odd numbers (inclusive).
-* **Sum Range:** The sum of the numbers must be strictly between 146 and 245 (i.e. 147..244).
+* **Sum Range:** The sum of the numbers must be between 146 and 245 (inclusive).
 
 ## Algorithm Requirements
 1. **Baseline:** Draw random tickets until one is valid. It gets score 0 and is always printed first.

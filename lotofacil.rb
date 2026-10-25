@@ -5,7 +5,7 @@ class LotofacilGenerator
   POOL = (1..25).to_a.freeze
   TICKET_SIZE = 15
   ODD_RANGE = (5..10).freeze
-  SUM_RANGE = (147..244).freeze # strictly between 146 and 245
+  SUM_RANGE = (146..245).freeze
   CANDIDATE_DRAWS = 999
   MODES = %w[different similar].freeze
   DEFAULT_MODE = "different"
@@ -42,7 +42,7 @@ class LotofacilGenerator
     puts "Amount: #{amount}"
     puts "Mode: #{mode}"
     puts "Rules: #{TICKET_SIZE} unique numbers (01-25) | Odds: #{ODD_RANGE} | " \
-         "Sum: #{SUM_RANGE} (strictly between 146 and 245) | Unique tickets"
+         "Sum: #{SUM_RANGE} | Unique tickets"
     puts "-" * 80
 
     tickets.each.with_index(1) do |ticket, index|
