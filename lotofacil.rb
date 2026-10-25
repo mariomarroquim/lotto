@@ -4,7 +4,7 @@
 class LotofacilGenerator
   POOL = (1..25).to_a.freeze
   TICKET_SIZE = 15
-  ODD_RANGE = (5..10).freeze
+  ODD_RANGE = (6..10).freeze
   SUM_RANGE = (146..245).freeze
   CANDIDATE_DRAWS = 999
   MODES = %w[different similar].freeze

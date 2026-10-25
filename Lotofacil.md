@@ -12,7 +12,7 @@ The script must accept two positional arguments:
 ## Strict Constraints
 A valid ticket MUST meet all the following criteria:
 * **Uniqueness:** No ticket can be identical to another ticket.
-* **Odd Numbers:** The ticket must contain between 5 and 10 odd numbers (inclusive).
+* **Odd Numbers:** The ticket must contain between 6 and 10 odd numbers (inclusive).
 * **Sum Range:** The sum of the numbers must be between 146 and 245 (inclusive).
 
 ## Algorithm Requirements
