@@ -17,9 +17,9 @@ A valid ticket MUST meet all the following criteria:
 
 ## Algorithm Requirements
 1. **Baseline:** Draw random tickets until one is valid. It gets score 0 and is always printed first.
-2. **Candidates:** Draw 999 more random tickets. Skip invalid ones and duplicates of any already accepted ticket. Score each accepted candidate against every ticket accepted before it (the baseline plus earlier candidates), where overlap = count of shared numbers:
-   * **"different":** score = HIGHEST overlap. Sort candidates by score ascending.
-   * **"similar":** score = LOWEST overlap. Sort candidates by score descending.
+2. **Candidates:** Draw 999 more random tickets. Skip invalid ones and duplicates of any already accepted ticket. Score each accepted candidate in both modes the same way: score = HIGHEST overlap (count of shared numbers) with any ticket accepted before it (the baseline plus earlier candidates). Higher score means more similar.
+   * **"different":** Sort candidates by score ascending (lowest scores first).
+   * **"similar":** Sort candidates by score descending (highest scores first).
 3. **Selection:** Output the baseline followed by the sorted candidates, truncated to `amount`. If there are fewer valid tickets than `amount`, print what exists.
 
 ## Output Formatting

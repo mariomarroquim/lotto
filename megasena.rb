@@ -73,10 +73,9 @@ class MegasenaGenerator
     end
   end
 
-  # Overlap = shared numbers; "different" keeps the worst case (max), "similar" the best case (min).
+  # Same score in both modes: highest overlap with any earlier ticket. Higher = more similar.
   def score(ticket, accepted)
-    overlaps = accepted.map { |other| (ticket & other).size }
-    similar? ? overlaps.min : overlaps.max
+    accepted.map { |other| (ticket & other).size }.max
   end
 end
 
