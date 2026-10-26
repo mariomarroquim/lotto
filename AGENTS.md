@@ -4,11 +4,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repo is
 
-Single-file Ruby CLIs that generate tickets for Brazilian lotteries, one per spec: `Lotofacil.md` → `lotofacil.rb`, `Megasena.md` → `megasena.rb`. There are no gems and no test suite.
+Single-file Ruby CLIs that generate tickets for Brazilian lotteries, one per spec: `lotofacil.md` → `lotofacil.rb`, `megasena.md` → `megasena.rb`. There are no gems and no test suite.
 
 ## Specs prevail
 
-Each `<Game>.md` spec is the source of truth, and its `<game>.rb` script is generated from it.
+Each `<game>.md` spec is the source of truth, and its `<game>.rb` script is generated from it.
 - When code and spec disagree, the spec wins: fix the code or ask, and never change the spec to match the code.
 - Change behavior by editing the spec first. Keep it tight, but complete enough to regenerate the script from scratch: any behavior the code relies on must be written there.
 - To regenerate, delete the script and rewrite it from the spec (don't patch it in place).
