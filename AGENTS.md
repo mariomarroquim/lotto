@@ -1,6 +1,6 @@
 # Lotto
 
-Single-file Ruby CLIs that generate tickets for Brazilian lotteries, one per spec: `lotofacil.md` → `lotofacil.rb`, `megasena.md` → `megasena.rb`.
+Lotto is a set of Ruby scripts that generate tickets for Brazilian lotteries, one per spec: `megasena.md` → `megasena.rb`, etc.
 
 ## Project details
 
