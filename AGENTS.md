@@ -1,24 +1,18 @@
-# CLAUDE.md
+# Lotto
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+Single-file Ruby CLIs that generate tickets for Brazilian lotteries, one per spec: `lotofacil.md` → `lotofacil.rb`, `megasena.md` → `megasena.rb`.
 
-## What this repo is
-
-Single-file Ruby CLIs that generate tickets for Brazilian lotteries, one per spec: `lotofacil.md` → `lotofacil.rb`, `megasena.md` → `megasena.rb`. There are no gems and no test suite.
-
-## Specs prevail
+## Project details
 
 Each `<game>.md` spec is the source of truth, and its `<game>.rb` script is generated from it.
 - When code and spec disagree, the spec wins: fix the code or ask, and never change the spec to match the code.
-- Change behavior by editing the spec first. Keep it tight, but complete enough to regenerate the script from scratch: any behavior the code relies on must be written there.
+- Change behavior by editing the spec first. Keep it tight, but complete enough to regenerate the script from scratch.
 - To regenerate, delete the script and rewrite it from the spec (don't patch it in place).
-- The specs share one structure and differ only in game parameters (pool, ticket size, odd and sum ranges). Keep them in sync when changing shared behavior.
+- The specs share one structure and differ only in the game's name and parameters (pool, ticket size, odd and sum ranges).
 
-## Running
+## Code conventions
 
-```bash
-ruby lotofacil.rb [amount] [mode]   # mode: different (default) | similar
-ruby megasena.rb [amount] [mode]
-```
-
-The output is random. To verify a change, run the script and check every ticket against the spec's constraints and output format.
+- The scripts use no gems. Don't add any dependencies without asking first.
+- If the code changes, sync both `AGENTS.md` and `README.md` as well.
+- Run the (re)generated scripts to check for errors before every commit.
+- This project only uses the `main` branch; commit and push directly to it.
