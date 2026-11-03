@@ -1,12 +1,10 @@
 # Lotto
 
-Lotto is a set of Ruby scripts that generate tickets for Brazilian lotteries, currently Lotofácil and Mega-Sena. Each script is generated from a Markdown spec (`lotofacil.md` → `lotofacil.rb`, `megasena.md` → `megasena.rb`), and the spec is the source of truth for its behavior. The scripts need no gems.
+Lotto is a set of Ruby scripts that generate tickets for Brazilian lotteries, currently Lotofácil and Mega-Sena. Each script is generated from a Markdown spec (`lotofacil.md` → `lotofacil.rb`, `megasena.md` → `megasena.rb`), and the spec is the source of truth for its behavior.
 
 ## Instructions
 
-This is a standard Ruby application. Run the script you want (e.g., `megasena.rb`).
-
-### Mega-Sena examples
+This is a standard Ruby application. Run the script you want (e.g., `megasena.rb`):
 
 ```bash
 ruby megasena.rb           # 1 ticket, different mode
