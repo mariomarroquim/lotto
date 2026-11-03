@@ -15,5 +15,5 @@ Each `<game>.md` spec is the source of truth, and its `<game>.rb` script is gene
 - The scripts use no gems. Don't add any dependencies without asking first.
 - If the code changes, sync both `AGENTS.md` and `README.md` as well.
 - Run the (re)generated scripts to check for errors before every commit.
-- Don't commit and push changes unless explicity required.
+- Don't commit and push changes unless explicitly required.
 - This project only uses the `main` branch; commit and push directly to it.
